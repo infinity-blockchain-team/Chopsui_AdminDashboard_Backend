@@ -177,7 +177,7 @@ app.get("/api/getProgress", async (req, res) => {
 
 
 
-await connectDB();
+// await connectDB();
 
 // Start server only in local dev (Vercel uses serverless)
 if (process.env.NODE_ENV !== 'production') {
@@ -186,6 +186,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 export default app;
+
 
 
 
